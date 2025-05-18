@@ -48,6 +48,101 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="assets/images/ico/apple-touch-icon-57-precomposed.png">
+    
+    <style>
+        .chat-widget {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .chat-button {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+
+        .chat-button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        .chat-button i {
+            margin: 0;
+        }
+
+       /* container is hidden by default */
+    #chatContainer {
+    display: none;
+    width: 360px;
+    height: 520px;
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    z-index: 1000;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    overflow: hidden;
+    animation: fadeIn 0.25s ease;
+    }
+
+    /* little header bar */
+    .chat-header {
+    height: 48px;
+    background: linear-gradient(135deg,#4a90e2,#9013fe);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+    }
+
+    /* close button */
+    .chat-close {
+    background: transparent;
+    border: none;
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+    line-height: 1;
+    }
+
+    /* fill the rest with the iframe */
+    #chatFrame {
+    width: 100%;
+    height: calc(100% - 48px);
+    border: none;
+    }
+
+    /* fade-in animation */
+    @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px) }
+    to   { opacity: 1; transform: translateY(0) }
+    }
+
+
+
+        @media (max-width: 768px) {
+            #chatContainer {
+                width: 300px;
+                height: 400px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -608,6 +703,35 @@
 <script src="assets/js/jquery.fitvids.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
 <script src="assets/js/scripts.js"></script>
-
+ <!-- Chat Widget -->
+<div class="chat-widget">
+    <button class="chat-button" onclick="toggleChat()" title="Chat with me">
+      <i class="fa fa-comments"></i>
+    </button>
+  
+    <div id="chatContainer">
+      <!-- header bar -->
+      <div class="chat-header">
+        <span>Career Chat</span>
+        <button class="chat-close" onclick="toggleChat()">×</button>
+      </div>
+  
+      <!-- your Gradio embed -->
+      <iframe
+        id="chatFrame"
+        src="https://omer1004-career-conversations.hf.space/?__theme=light"
+        allow="clipboard-write"
+      ></iframe>
+    </div>
+  </div>
+  
+  <script>
+    function toggleChat() {
+      const c = document.getElementById('chatContainer');
+      c.style.display = c.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+  
+  
 </body>
 </html>
