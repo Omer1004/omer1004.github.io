@@ -1,13 +1,15 @@
 # Omer Iny
 
-Welcome to my GitHub profile! I'm a Software Engineering student at Afeka College of Engineering, based in Tel Aviv, Israel. Passionate about coding, I thrive on challenges and constantly seek to enhance my skills in software development.
+Welcome to my GitHub profile! I'm a Software Engineering graduate from Afeka College of Engineering, based in Tel Aviv, Israel. Passionate about coding, I thrive on challenges and constantly seek to enhance my skills in software development.
 
 ## About Me
 
-- 🎓 Pursuing a BSc in Software Engineering at Afeka College of Engineering.
+- 🎓 BSc in Software Engineering from Afeka College of Engineering (2024).
 - 🌟 Received a Certificate for Excellence in my first year, with a GPA of 87.
 - 💼 Former Combat Soldier in the Search and Rescue Unit of the IDF, where I honed my teamwork and resilience skills.
+- 🛠️ Backend internship at a startup (Mar-May 2025) developing Node.js/Express APIs and refining team workflows with Jira, Slack and Cursor.
 - 🌱 Currently expanding my knowledge in Python, Java, Spring, Unity, SQL, MongoDB, and React.
+- 📚 Completed courses on n8n workflow automation and The Complete Agentic AI Engineering Course (Udemy).
 - 🔭 Working on various projects that can be found on my GitHub, demonstrating my coding skills and problem-solving abilities.
 - 📈 Passionate about the world of finance, entrepreneurship, and tech innovations.
 
@@ -20,8 +22,10 @@ Welcome to my GitHub profile! I'm a Software Engineering student at Afeka Colleg
 
 ## Education
 
-- **BSc Software Engineering** - Afeka College of Engineering (2020-Present)
+- **BSc Software Engineering** - Afeka College of Engineering (2020-2024)
 - **High School Diploma** - Major in Math, Computer Science, English, and French.
+- **n8n Workflow Automation Course** (2025)
+- **The Complete Agentic AI Engineering Course (Udemy)** (2025)
 
 ## Connect With Me
 
